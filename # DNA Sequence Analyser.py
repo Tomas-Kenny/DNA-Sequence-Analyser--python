@@ -1,12 +1,15 @@
 # DNA Sequence Analyser
 
-
-#takes input - DNA string
-# outputs results such as:
+'''
+Description: 
+Takes input - DNA string
+Outputs results such as:
 # length, 
 # GC content, 
 # nucleotides, 
 # reverse complement
+'''
+
 
 
 dna_sequence = input ("Enter a DNA sequence, please make sure input is valid (only a,c,t or g): ")
@@ -42,7 +45,7 @@ print()
 count_of_Gs= dna_sequence.count("G")
 count_of_Cs= dna_sequence.count("C")
 GC_content= count_of_Cs + count_of_Gs
-GC_fraction= GC_content / len(dna_sequence)      # don't do // , thats floor division, cuts off decimals 
+GC_fraction= GC_content / len(dna_sequence)      
 GC_percentage = GC_fraction *100
 
 print("GC content percentage is significant as it is an indication of DNA properties such as DNA stability , Tm, Gene regulation and genome structure, evolutionary and species differences and PCR and primer design as well as codon usage and gene expression")
@@ -69,6 +72,9 @@ print(f"There are {A_nucs} A nucleotides, {C_nucs} C nucleotides, {T_nucs} T nuc
 
 
 # Reverse Compliment
+
+
+
 print()
 '''
 We want the dna sequence in reverse and compliment. A should be T, C should be G 
@@ -80,18 +86,7 @@ Iterate throught the dna sequene and replace the nucleotides appropiately
 3. take the complement 
    the complement - we basically have to do DNA replication so each T will become A and G will become C and vice versa
    we have the reverse dna strand, we can creat a list and add the characters f each letter into a new list based on what it is
-   BETTER TO USE DINTIONARIES FOR THIS 
-   so maybe an i statement like before 
-   for letter in Reverse_dna_seq:
-    if letter == "A"
-        reverse_comp.append("T")
-    if letter == "C"
-        reverse_comp.append("G")
-    if letter == "T"
-        reverse_comp.append("A")
-    if letter == "G"
-        reverse_comp.append("C")
-    
+   Can also use dictionaries 
 4. New reverse compliment sequence
 
 '''
